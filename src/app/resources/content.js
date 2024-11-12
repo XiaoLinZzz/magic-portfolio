@@ -142,6 +142,48 @@ const about = {
         ],
         images: [],
       },
+      {
+        company: "Australian Institue of Machine Learning",
+        timeframe: "Nov 2022 - Feb 2023",
+        role: (
+          <>
+            Research Assistant (with{" "}
+            <a
+              href="https://scholarships.adelaide.edu.au/Scholarships/undergraduate/all-faculties/adelaide-summer-research-scholarships"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Adelaide Summer research scholarship
+            </a>
+            )
+          </>
+        ),
+        achievements: [
+          <>
+            Project Title: Weakly-supervised Semantic Image Segmentation + Human
+            Guidance (supervised with Dr. Zhibin Liao)
+          </>,
+          <>
+            Achieve accurate image segmentation with minimal labeled data by
+            combining weak supervision and human guidance for refinement.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/SLIC.png",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/AIML.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
     ],
   },
   studies: {
@@ -159,6 +201,12 @@ const about = {
             Bachelor of Mathematical and Computer Science (major in Computer
             Science)
           </>
+        ),
+      },
+      {
+        name: "Fudan University (Exchange Program)",
+        description: (
+          <>Completed multiple computer science courses at Fudan University.</>
         ),
       },
     ],
