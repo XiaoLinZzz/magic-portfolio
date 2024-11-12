@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Lujie',
+    lastName:  'Ma',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    role:      'Software Engineer (Frontend / Full Stack)',
+    avatar:    '/images/profile.jpg',
+    location:  'Australia/Melbourne',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Mandarin']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/XiaoLinZzz',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/lujie-ma/',
     },
     {
         name: 'X',
@@ -39,7 +39,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:xiaolinzzz2002@gmail.com',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Software Engineer</>,
+    subline: <>I'm Lujie, a graduate student at <InlineCode>UoM</InlineCode>, where I study<br/> computer science. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -63,42 +63,46 @@ const about = {
         display: true
     },
     calendar: {
-        display: true,
+        display: false,
         link: 'https://cal.com'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Lujie is currently M.IT student with distributed computing major at the University of Melbourne. Before coming to University of Melbourne, Lujie earned his B.MCS in computer science major from University of Adelaide.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Microsoft',
+                timeframe: 'Nov 2023 - May 2024',
+                role: 'Software Engineer (Intern)',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Work with UI and PM in Agile environment, deliver numerous features that contributed to the revenue.</>,
+                    <>Participated in brainstorming sessions to generate new ideas and solutions.</>,
+                    <>Evaluated experimental results and ran scripts to analyze data and help to determine the effectiveness of changes.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
+                        src: '/images/work/ms.jpg',
                         alt: 'Once UI Project',
                         width: 16,
-                        height: 9
+                        height: 9,
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Skand',
+                timeframe: 'July 2023 - Oct 2023',
+                role: 'Software Engineer (Intern)',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Assisted in the front-end development and implementation, focusing on improving user experience.</>,
+                    <>Collaborated with cross-functional teams in functional testing, contributing to enhancements in product quality
+                        and performance.</>,
+                    <>Gained experience with a modern tech stack such as React.js, Node.js, Apollo GraphQL, MongoDB, and CSS-
+                        in-JS, contributing to efficient and scalable web solutions.</>,
                 ],
                 images: [ ]
             }
@@ -109,17 +113,17 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'University of Melbourne',
+                description: <>Master of Information technology</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'University of Adelaide',
+                description: <>Bachelor of Mathematical and Computer Science (major in Computer Science)</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
@@ -165,7 +169,7 @@ const blog = {
 }
 
 const work = {
-    label: 'Work',
+    label: 'Projects',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
