@@ -1,0 +1,24 @@
+---
+title: "Backtracking Template"
+publishedAt: "2024-11-15"
+image: "/images/gallery/leetcode.png"
+summary: "Backtracking is a powerful algorithm technique used to solve problems that involve exploring all possible combinations or permutations of a set of elements. It is commonly used in problems that require finding all solutions or exploring all possible paths in a graph or tree."
+tag: "Coding"
+---
+
+## Backtracking Template
+
+```javascript
+void backtracking(参数) {
+    if (终止条件) {
+        存放结果;
+        return;
+    }
+
+    for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+        处理节点;
+        backtracking(路径，选择列表); // 递归
+        回溯，撤销处理结果
+    }
+}
+```
